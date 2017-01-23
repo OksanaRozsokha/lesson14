@@ -13,7 +13,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
+menu, nav, output, ruby, section, header, footer, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, header, footer, summary {
   display: block;
 }
 
@@ -74,7 +74,24 @@ html, body {
 
 body {
   padding: 15px;
-  font: 24px "code", serif;
+  font: 24px "century-gothic", sans-serif;
+}
+
+section, header, footer {
+  background: #f6f6f6;
+}
+
+h2 {
+  text-indent: uppercase;
+}
+
+.main-header {
+  padding: 25px 0;
+}
+
+h1 {
+  text-indent: -9999px;
+  margin-top: -35px;
 }
 
 .flex-header {
@@ -82,6 +99,8 @@ body {
   display: flex;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .menu-list {
@@ -91,36 +110,22 @@ body {
   justify-content: space-between;
 }
 .menu-list li {
-  margin-left: 85px;
+  padding: 25px 10px;
+  margin-left: 50px;
+  font: 16px "code", serif;
+}
+.menu-list a {
+  color: #000;
+  text-transform: uppercase;
 }
 
-.team-list {
-  width: 50%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+.menu {
+  display: none;
 }
-.team-list:nth-child(2) {
-  -webkit-align-self: flex-end;
-  align-self: flex-end;
-}
-.team-list .left-photos {
-  width: 50%;
-  display: -webkit-flex;
-  display: flex;
-}
-.team-list .right-photos {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-}
-.team-list:last-child {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
+
+.intro {
+  background: url("../img/intro-bg.png") 50% 0 no-repeat;
+  background-size: cover;
 }
 
 img {

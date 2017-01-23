@@ -1,12 +1,29 @@
 
+.main-header {
+  padding: 25px 0;
+}
+h1 {
+  text-indent:  -9999px;
+  margin-top: -35px;
+}
 .flex-header {
   @include display-flex;
   @include justify-content(space-between);
+  @include align-items(center);
 }
 .menu-list {
   @include display-flex;
   @include justify-content(space-between);
   li {
-    margin-left: 85px;
+    padding: 25px 10px;
+    margin-left: 50px;
+    @include code-font(16px);
   }
+  a {
+    color: $black;
+    text-transform: uppercase;
+  }
+}
+.menu {
+  display: none;
 }

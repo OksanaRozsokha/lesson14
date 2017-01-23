@@ -5,6 +5,17 @@ html, body{
 }
 body {
   padding: 15px;
-  @include code-font(24px);
+  @include century-gothic(24px);
 }
-
+section {
+  background: $grey-bg;
+}
+header {
+  @extend section;
+}
+footer {
+  @extend section;
+}
+h2 {
+  text-indent: uppercase;
+}
