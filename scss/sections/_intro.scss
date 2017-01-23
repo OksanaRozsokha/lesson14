@@ -1,0 +1,20 @@
+.team-list {
+  width: 50%;
+  @include display-flex;
+  @include flex-direction(column);
+  &:nth-child(2) {
+    @include align-self(flex-end);
+  }
+  .left-photos {
+    width: 50%;
+    @include display-flex;
+  }
+  .right-photos {
+    @include display-flex;
+    @include align-items(flex-end);
+  }
+  &:last-child {
+    @include display-flex;
+    @include align-items(center);
+  }
+}

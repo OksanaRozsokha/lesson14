@@ -1,0 +1,485 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "code";
+  src: url("../fonts/code/code-light.ttf") format("truetype"), url("../fonts/code/code-light.otf") format("opentype");
+}
+@font-face {
+  font-family: "century-gothic";
+  src: url("../fonts/century-gothic/century-gothic.ttf") format("truetype"), url("../fonts/century-gothic/century-gothic.otf") format("opentype");
+}
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  padding: 15px;
+  font: 24px "code", serif;
+}
+
+.flex-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.menu-list li {
+  margin-left: 85px;
+}
+
+.team-list {
+  width: 50%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.team-list:nth-child(2) {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+.team-list .left-photos {
+  width: 50%;
+  display: -webkit-flex;
+  display: flex;
+}
+.team-list .right-photos {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.team-list:last-child {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  width: 200px;
+}
+
+.grid-item--width2 {
+  width: 400px;
+}
+
+@media (min-width: 2000px) {
+  .container {
+    width: 1575px;
+  }
+
+  .intro > .container {
+    margin-top: 3%;
+  }
+
+  .big-circle {
+    padding: 326px;
+  }
+
+  .dron-intro {
+    max-width: 1035px;
+  }
+
+  .slider-text {
+    margin-right: 185px;
+  }
+
+  .droid-bg {
+    padding: 306px 0;
+  }
+
+  .max-circle {
+    right: -35%;
+  }
+
+  .title-wrap {
+    width: 45%;
+  }
+
+  .button-wrap .general-btn {
+    margin-top: 50%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .features-list li {
+    margin-left: 12%;
+  }
+
+  .jq-tab h2 {
+    font-size: 92px;
+  }
+
+  .grey-bg {
+    padding: 160px 0 55px 80px;
+  }
+  .grey-bg h2 {
+    max-width: 750px;
+  }
+
+  .flying-generation {
+    padding: 315px 0 250px;
+  }
+  .flying-generation h2 {
+    max-width: 750px;
+  }
+  .flying-generation .dron-img {
+    max-width: 908px;
+    right: -7%;
+  }
+
+  .start-journey {
+    padding: 790px 0 150px;
+  }
+
+  .main-footer {
+    padding: 230px 0 235px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1409px) {
+  .scroll-wrap {
+    bottom: 18%;
+  }
+}
+@media (max-width: 1199px) {
+  .slider-text {
+    max-width: 345px;
+    margin-right: 45px;
+  }
+
+  .big-circle {
+    padding: 150px;
+  }
+
+  .dron-intro {
+    max-width: 470px;
+  }
+
+  .max-circle {
+    top: 15%;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 991px) {
+  .intro > .container {
+    margin-top: 10%;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .markers-list {
+    margin-right: 35px;
+  }
+
+  .slider-text {
+    max-width: 245px;
+    margin-right: 75px;
+  }
+
+  .dron-intro {
+    max-width: 400px;
+  }
+
+  .big-circle {
+    padding: 120px;
+  }
+
+  .grey-bg h2 {
+    font-size: 60px;
+  }
+
+  .flying-generation h2 {
+    max-width: 475px;
+    font-size: 60px;
+  }
+
+  .start-journey h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 851px) and (max-width: 991px) {
+  .content-wrap {
+    right: 1%;
+  }
+}
+@media (max-width: 850px) {
+  .about-fly {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .droid-bg {
+    width: 100%;
+  }
+
+  .road-bg {
+    width: 100%;
+  }
+
+  .road-bg .title-wrap {
+    width: 70%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 200px  0  200px 10px;
+  }
+  .road-bg h2 {
+    margin-left: 0;
+  }
+
+  .button-wrap .general-btn {
+    margin-top: 50%;
+  }
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  .intro > .container {
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .intro .small-circle {
+    right: -4%;
+  }
+
+  .flex-left {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .flex-right {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
+  .buy-btn {
+    -webkit-order: 1;
+    order: 1;
+    margin: 15px 0 0 0;
+  }
+
+  .big-circle {
+    padding: 100px;
+    margin-top: 25px;
+  }
+
+  .dron-intro {
+    max-width: 300px;
+  }
+
+  .droid-bg h2 {
+    width: auto;
+  }
+
+  .road-bg .general-btn {
+    padding: 20px 20px;
+    font-size: 13px;
+  }
+
+  .features-list {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .features-list li {
+    margin: 0 0 10% 0;
+  }
+
+  .grey-bg h2 {
+    font-size: 48px;
+  }
+
+  .flying-generation {
+    padding: 100px 0 200px;
+  }
+  .flying-generation h2 {
+    font-size: 48px;
+  }
+  .flying-generation .dron-img {
+    top: 70%;
+    width: 60%;
+  }
+
+  .start-journey h2 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 620px) {
+  .button-wrap .general-btn {
+    margin-top: 95%;
+  }
+
+  .man-bg {
+    display: none;
+  }
+
+  .grey-bg {
+    width: 100%;
+    padding-right: 25px;
+  }
+}
+@media (min-width: 560px) and (max-width: 850px) {
+  .max-circle {
+    right: -29%;
+    width: 490px;
+    height: 490px;
+  }
+}
+@media (max-width: 465px) {
+  .slider-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .big-circle {
+    padding: 95px;
+    margin-left: 45px;
+  }
+
+  .dron-intro {
+    max-width: 265px;
+  }
+
+  .scroll-wrap {
+    left: -11%;
+    bottom: 14%;
+  }
+
+  .road-bg h2 {
+    font-size: 35px;
+  }
+
+  .title-wrap {
+    padding-left: 0;
+  }
+}
+@media (min-width: 466px) and (max-width: 767px) {
+  .scroll-wrap {
+    bottom: 30%;
+  }
+}
+@media (min-width: 465px) and (max-width: 850px) {
+  .max-circle {
+    top: 5%;
+    width: 490px;
+    height: 490px;
+  }
+}
+@media (max-height: 480px) {
+  .scroll-wrap {
+    left: -11%;
+    bottom: 26%;
+  }
+
+  .big-circle {
+    padding: 75px;
+    margin-top: 10px;
+  }
+}
+@media (min-height: 1048px) {
+  .intro > .container {
+    margin-top: 20%;
+  }
+}
+@media only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .intro {
+    height: auto;
+  }
+  .intro > .container {
+    padding-bottom: 150px;
+  }
+
+  .scroll-wrap {
+    display: none;
+  }
+
+  .big-circle {
+    padding: 85px;
+    margin-top: 30px;
+    margin-left: 110px;
+  }
+}

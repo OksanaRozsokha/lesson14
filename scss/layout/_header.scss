@@ -1,0 +1,12 @@
+
+.flex-header {
+  @include display-flex;
+  @include justify-content(space-between);
+}
+.menu-list {
+  @include display-flex;
+  @include justify-content(space-between);
+  li {
+    margin-left: 85px;
+  }
+}
