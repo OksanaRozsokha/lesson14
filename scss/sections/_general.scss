@@ -4,7 +4,7 @@ html, body{
   -webkit-overflow-scrolling: touch;
 }
 body {
-  padding: 15px;
+  padding: 10px;
   @include century-gothic(24px);
 }
 section {
@@ -17,5 +17,6 @@ footer {
   @extend section;
 }
 h2 {
-  text-indent: uppercase;
+  @include century-gothic(18px);
+  text-transform: uppercase;
 }

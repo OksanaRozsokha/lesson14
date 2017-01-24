@@ -1,0 +1,44 @@
+.main-footer {
+  color: $white;
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+.grey-bg {
+  padding: 30px 0;
+  background: $grey;
+}
+.black-bg {
+  padding: 30px 0;
+  background: $black;
+}
+.left-content {
+  p {
+    margin: 30px 0;
+    line-height: 20px;
+  }
+  a {
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-bottom: 45px;
+  }
+}
+.gallery-list {
+  max-width: 405px;
+  margin-top: 20px;
+  @include display-flex;
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  li {
+    width: 32%;
+    margin: 1.25% 1.25% 0 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

@@ -15,6 +15,3 @@
   -webkit-transform: rotate($deg);
   transform: rotate($deg);
 }
-@mixin background-image($url, $position, $repeat) {
-  @include background(image-url($url, false, false) $position $repeat);
-}

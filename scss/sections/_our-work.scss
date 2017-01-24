@@ -1,4 +1,55 @@
+.our-work {
+  padding-bottom: 85px;
+  overflow: hidden;
+}
+.pretty-header {
+  margin-bottom: 45px;
+  text-align: center;
+  .bg-title {
+    display: inline-block;
+    background: $grey;
+    max-width: 160px;
+    padding: 5px 25px;
+    overflow: hidden;
+  }
+  h2 {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: $yellow;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      display: inline-block;
+      height: 1px;
+      width: 50%;
+      background: #cacaca;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 60%;
+      display: inline-block;
+      height: 1px;
+      width: 50%;
+      background: #cacaca;
+    }
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.bg-title {
 
+}
+.portfolio-list {
+  width: 100%;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -8,6 +59,7 @@ img {
 }
 .grid-item {
   width: 200px;
+  padding-right: 5px;
 }
 .grid-item--width2 {
   width: 400px;

@@ -15,7 +15,6 @@ h1 {
   @include display-flex;
   @include justify-content(space-between);
   li {
-    padding: 25px 10px;
     margin-left: 50px;
     @include code-font(16px);
   }
