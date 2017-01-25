@@ -4,27 +4,53 @@
 }
 .slider {
   .slider-item {
+    @include display-flex;
+    @include justify-content(center);
+    @media (max-width: 860px) {
+      @include flex-direction(column-reverse);
+      @include align-items(center);
+    }
     img {
       position: relative;
       z-index: -100;
       right: 3%;
       width: 45%;
       height: 45%;
+      @media (max-width: 860px) {
+        width: 60%;
+        height: auto;
+        @include respond-to(handhelds) {
+          width: 85%;
+        }
+      }
     }
-    @include display-flex;
-    @include justify-content(center);
   }
 }
 .text-wrap {
   position: relative;
   left: 3%;
   padding-top: 60px;
+  @include respond-to(handhelds) {
+    padding-top: 25px;
+  }
   h2 {
     font-size: 65px;
     margin-bottom: 10px;
+    @media (max-width: 964px) {
+      font-size: 35px;
+    }
+    @include respond-to(handhelds) {
+      font-size: 21px;
+    }
   }
   p {
     color: $white;
+    @media (max-width: 964px) {
+      font-size: 15px;
+    }
+    @include respond-to(handhelds) {
+      font-size: 13px;
+    }
   }
   .yellow-bg {
     background: $yellow;
@@ -42,6 +68,12 @@
   display: block;
   width: 360px;
   margin-bottom: 5px;
+  @media (max-width: 964px) {
+    width: 190px;
+  }
+  @include respond-to(handhelds) {
+    width: 120px;
+  }
 }
 .width-second {
   display: inline;
@@ -50,6 +82,12 @@
 .width-third {
   display: block;
   width: 350px;
+  @media (max-width: 964px) {
+    width: 235px;
+  }
+  @include respond-to(handhelds) {
+    width: 190px;
+  }
 }
 .width-fourth {
   width: 363px;
@@ -57,25 +95,11 @@
 .width-fifth {
   display: block;
   width: 297px;
+  @media (max-width: 964px) {
+    width: 190px;
+  }
+  @include respond-to(handhelds) {
+    width: 150px;
+  }
 }
 
-//.team-list {
-//  width: 50%;
-//  @include display-flex;
-//  @include flex-direction(column);
-//  &:nth-child(2) {
-//    @include align-self(flex-end);
-//  }
-//  .left-photos {
-//    width: 50%;
-//    @include display-flex;
-//  }
-//  .right-photos {
-//    @include display-flex;
-//    @include align-items(flex-end);
-//  }
-//  &:last-child {
-//    @include display-flex;
-//    @include align-items(center);
-//  }
-//}

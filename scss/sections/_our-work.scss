@@ -28,6 +28,12 @@
       height: 1px;
       width: 50%;
       background: #cacaca;
+      @include respond-to(handhelds) {
+        left: 80%;
+      }
+      @media (min-width: 480px) and (max-width: 991px) {
+        left: 72%;
+      }
     }
     &:after {
       content: '';
@@ -38,6 +44,12 @@
       height: 1px;
       width: 50%;
       background: #cacaca;
+      @include respond-to(handhelds) {
+        right: 80%;
+      }
+      @media (min-width: 480px) and (max-width: 991px) {
+        right: 72%;
+      }
     }
   }
   p {
@@ -53,6 +65,9 @@
 img {
   max-width: 100%;
   height: auto;
+  @include respond-to(handhelds) {
+    width: 100%;
+  }
 }
 .grid {
   margin: 0 auto;
@@ -60,7 +75,14 @@ img {
 .grid-item {
   width: 200px;
   padding-right: 5px;
+  @include respond-to(handhelds) {
+    width: 50%;
+
+  }
 }
 .grid-item--width2 {
   width: 400px;
+  @include respond-to(handhelds) {
+    width: 100%;
+  }
 }

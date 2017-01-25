@@ -10,21 +10,21 @@
   }
 }
 .designs-list {
-  li:hover {
-    .hover-block {
-      display: none;
-    }
-    .square {
-      visibility: visible;
-    }
-    .hover-words {
-      visibility: visible;
-    }
-    .text-block {
-      p {
-        @include code-font(20px);
-        text-transform: uppercase;
+  li {
+    margin-bottom: 30px;
+    &:hover {
+      .hover-block {
+        display: none;
       }
+      .square {
+        visibility: visible;
+      }
+      .hover-words {
+        visibility: visible;
+      }
+    }
+    @include respond-to(wide-handhelds) {
+      padding: 0 20% 0 20%;
     }
   }
   .text-block {
@@ -45,6 +45,7 @@
     position: relative;
   }
   img {
+    display: block;
     width: 100%;
     height: auto;
   }
@@ -56,6 +57,7 @@
     bottom: 0;
     left: 0;
     @include transition-duration(0.5s);
+
   }
   .hover-align {
     background: $yellow;

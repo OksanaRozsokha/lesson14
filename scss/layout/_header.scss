@@ -26,6 +26,24 @@ h1 {
     text-transform: uppercase;
   }
 }
+.main-header {
+  .menu-list {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
 .menu {
   display: none;
+  @media (max-width: 767px) {
+    display: block;
+    width: 25px;
+    height: 15px;
+    @include small-bg("../img/menu-burger.png");
+    background-color: $grey;
+    border: 1px solid $grey;
+    text-indent: -9999px;
+    float: right;
+    outline: none;
+  }
 }
