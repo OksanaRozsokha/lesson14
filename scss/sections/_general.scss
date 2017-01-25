@@ -13,10 +13,11 @@ section {
 header {
   @extend section;
 }
-footer {
-  @extend section;
-}
 h2 {
   @include century-gothic(18px);
   text-transform: uppercase;
 }
+.yellow {
+  color: yellow;
+}
+

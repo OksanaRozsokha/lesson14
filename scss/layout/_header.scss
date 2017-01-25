@@ -11,11 +11,14 @@ h1 {
   @include justify-content(space-between);
   @include align-items(center);
 }
+.main-nav {
+  width: 57%;
+}
 .menu-list {
+  width: 100%;
   @include display-flex;
   @include justify-content(space-between);
   li {
-    margin-left: 50px;
     @include code-font(16px);
   }
   a {
