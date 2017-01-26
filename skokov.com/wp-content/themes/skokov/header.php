@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Skokov</title>
     <!-- Bootstrap -->
-<!--    <link href="--><?php //bloginfo('template_url')?><!--/css/lib/bootstrap.min.css" rel="stylesheet">-->
-<!--    <link rel="stylesheet" type="text/css" href="--><?php //bloginfo('template_url')?><!--/css/lib/menu/pushy.css"/>-->
-<!--    <link rel="stylesheet" type="text/css" href="--><?php //bloginfo('template_url')?><!--/css/lib/slick.css"/>-->
-<!--    <link rel="stylesheet" type="text/css" href="--><?php //bloginfo('template_url')?><!--/css/lib/slick-theme.css"/>-->
-<!--    <link href="--><?php //bloginfo('stylesheet_url')?><!--" media="screen, projection" rel="stylesheet" type="text/css"/>-->
-<!--    <script src="--><?php //bloginfo('template_url')?><!--/js/lib/jquery-3.1.1.js"></script>-->
-<!---->
-<!--    <script src="--><?php //bloginfo('template_url')?><!--/js/lib/bootstrap.min.js"></script>-->
-<!--    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
-<!--    <script type="--><?php //bloginfo('template_url')?><!--/text/javascript" src="js/lib/slick.min.js"></script>-->
-<!---->
-<!--    <script src="--><?php //bloginfo('template_url')?><!--/js/lib/menu/pushy.min.js"></script>-->
-<!--    <script src="--><?php //bloginfo('template_url')?><!--/js/main.js"></script>-->
+    <link href="<?php bloginfo('template_url')?>/css/lib/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/css/lib/menu/pushy.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/css/lib/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url')?>/css/lib/slick-theme.css"/>
+    <link href="<?php bloginfo('stylesheet_url')?>" media="screen, projection" rel="stylesheet" type="text/css"/>
+    <script src="<?php bloginfo('template_url')?>/js/lib/jquery-3.1.1.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/lib/bootstrap.min.js"></script>
+    <script type="<?php bloginfo('template_url')?>/text/javascript" src="js/lib/slick.min.js"></script>
+        <script src="<?php bloginfo('template_url')?>/js/lib/menu/pushy.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/main.js"></script>
 
 
 </head>
