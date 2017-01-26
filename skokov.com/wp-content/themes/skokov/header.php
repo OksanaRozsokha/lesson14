@@ -13,11 +13,10 @@
     <link href="<?php bloginfo('stylesheet_url')?>" media="screen, projection" rel="stylesheet" type="text/css"/>
     <script src="<?php bloginfo('template_url')?>/js/lib/jquery-3.1.1.js"></script>
     <script src="<?php bloginfo('template_url')?>/js/lib/bootstrap.min.js"></script>
-    <script type="<?php bloginfo('template_url')?>/text/javascript" src="js/lib/slick.min.js"></script>
-        <script src="<?php bloginfo('template_url')?>/js/lib/menu/pushy.min.js"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_url')?>/js/lib/slick.min.js"></script>
+    <script src="<?php bloginfo('template_url')?>/js/lib/menu/pushy.min.js"></script>
     <script src="<?php bloginfo('template_url')?>/js/main.js"></script>
-
 
 </head>
 <body>
