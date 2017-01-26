@@ -19,7 +19,15 @@ $(document).ready(function () {
         // options
         itemSelector: '.grid-item',
         columnWidth: 200,
-        fitWidth: true
+        fitWidth: true,
+        responsive: [
+            {
+                breakpoint: 420,
+                settings: {
+                    fitWidth: false
+                }
+            }
+        ]
     });
     $('.clients-list').slick({
         infinite: true,

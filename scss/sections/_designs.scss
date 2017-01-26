@@ -24,7 +24,10 @@
       }
     }
     @include respond-to(wide-handhelds) {
-      padding: 0 20% 0 20%;
+      padding: 0 25% 0 25%;
+    }
+    @media (min-width: 370px)and(max-width: 478px) {
+      padding: 0 15% 0 15%;
     }
   }
   .text-block {

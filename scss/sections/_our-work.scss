@@ -77,12 +77,19 @@ img {
   padding-right: 5px;
   @include respond-to(handhelds) {
     width: 50%;
-
   }
+  //@media (max-width: 420px) {
+  //  width: 200px;
+  //  display: -webkit-inline-flex;
+  //  display: inline-flex;
+  //}
 }
 .grid-item--width2 {
   width: 400px;
   @include respond-to(handhelds) {
     width: 100%;
   }
+  //@media (max-width: 420px) {
+  //  width: 265px;
+  //}
 }
