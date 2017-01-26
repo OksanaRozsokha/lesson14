@@ -5,6 +5,8 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/sprites";
+@import "icons/*.png";
 @import "base/fonts";
 @import "base/variables";
 @import "base/mixins";
@@ -16,7 +18,8 @@
 @import "sections/_our-work";
 @import "sections/_our-clients";
 @import "layout/footer";
-@import "base/_JQ-features";
+@import "base/sprite";
+@import "base/_form-animation";
 @import "base/responsive";
 
 
