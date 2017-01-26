@@ -8,27 +8,29 @@ $(document).ready(function () {
         arrows: true
     });
 
-    $('.design-list li').mouseover(function () {
+    $('.designs-list li').mouseover(function () {
        $(this).children('.jq-text').find('p').text('Redesigning width personality');
+       // $(this).children().find('.hover-block').fadeOut(50);
     });
-    $('.design-list li').mouseout(function () {
+    $('.designs-list li').mouseout(function () {
         $(this).children('.jq-text').find('p').text('Lorem ipsum dolor sit amet,consectetur.');
+        // $(this).children().find('.hover-block').fadeIn(50);
     });
 
-    $('.grid').masonry({
+    $('.grid').masonry ({
         // options
         itemSelector: '.grid-item',
         columnWidth: 200,
-        fitWidth: true,
-        responsive: [
-            {
-                breakpoint: 420,
-                settings: {
-                    fitWidth: false
-                }
-            }
-        ]
+        fitWidth: true
     });
+    $('.grid').on( 'click', '.grid-item', function() {
+        // remove clicked element
+        $('.grid').masonry( 'remove', this )
+        // layout remaining item elements
+            .masonry('layout');
+    });
+
+
     $('.clients-list').slick({
         infinite: true,
         slidesToShow: 8,
@@ -41,17 +43,13 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 3
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
             }
         ]

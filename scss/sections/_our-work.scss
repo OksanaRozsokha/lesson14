@@ -65,31 +65,25 @@
 img {
   max-width: 100%;
   height: auto;
-  @include respond-to(handhelds) {
-    width: 100%;
-  }
 }
 .grid {
   margin: 0 auto;
+  @include respond-to(handhelds) {
+    position: static;
+  }
 }
 .grid-item {
   width: 200px;
   padding-right: 5px;
   @include respond-to(handhelds) {
-    width: 50%;
+    position: static;
   }
-  //@media (max-width: 420px) {
-  //  width: 200px;
-  //  display: -webkit-inline-flex;
-  //  display: inline-flex;
-  //}
 }
+
 .grid-item--width2 {
   width: 400px;
   @include respond-to(handhelds) {
+    position: static;
     width: 100%;
   }
-  //@media (max-width: 420px) {
-  //  width: 265px;
-  //}
 }

@@ -10,6 +10,7 @@
   }
 }
 .designs-list {
+  height: 400px;
   li {
     margin-bottom: 30px;
     &:hover {
@@ -17,10 +18,17 @@
         display: none;
       }
       .square {
-        visibility: visible;
+        display: block;
       }
       .hover-words {
         visibility: visible;
+      }
+      .text-block {
+        padding: 0 10px 30px;
+        p {
+          text-transform: uppercase;
+         @include  code-font(20px);
+        }
       }
     }
     @include respond-to(wide-handhelds) {
@@ -34,9 +42,11 @@
     padding: 0 30px 30px;
     background: $grey;
     text-align: center;
-    @include transition-duration(0.5s);
     @include century-gothic(13px);
     color: $white;
+    p {
+      font-size: 18px;
+    }
     .hover-words {
       font-size: 10px;
       margin-top: 10px;
@@ -109,13 +119,13 @@
 .square {
   position: absolute;
   bottom: 40%;
-  display: block;
+  display: none;
   width: 20px;
   height: 20px;
   @include rotate(45deg);
   background: $grey;
   text-indent: -9999px;
-  visibility: hidden;
+  @include transition-duration(0.5s);
 
 }
 .yellow {

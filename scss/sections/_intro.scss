@@ -30,6 +30,12 @@
   position: relative;
   left: 3%;
   padding-top: 60px;
+  @media (min-width: 1600px) {
+    padding-top: 120px;
+  }
+  @media (min-width: 1126px)and(max-width: 1235px) {
+    padding-top: 30px;
+  }
   @include respond-to(handhelds) {
     padding-top: 25px;
   }
