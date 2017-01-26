@@ -114,7 +114,7 @@ h1 {
 }
 
 .main-nav {
-  width: 57%;
+  width: 60%;
 }
 
 .menu-list {
@@ -899,7 +899,7 @@ form {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .flex-wrap {
     -webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
@@ -910,7 +910,7 @@ form {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .main-footer .main-nav {
     padding: 5px;
     margin-bottom: 30px;
