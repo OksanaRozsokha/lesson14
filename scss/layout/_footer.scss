@@ -236,7 +236,7 @@ form {
 .flex-wrap {
   @include display-flex;
   @include justify-content(space-between);
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     @include flex-direction(column-reverse);
     @include justify-content(center);
     @include align-items(center);
@@ -244,7 +244,7 @@ form {
 }
 .main-footer {
   .main-nav {
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
       padding: 5px;
       margin-bottom: 30px;
       border: 1px solid $yellow;
